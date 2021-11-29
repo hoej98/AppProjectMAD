@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditItemActivity">
+
+    <Button
+        android:id="@+id/editItemSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/editItemSave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editItemBottomDivider" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/editItemRcv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/editItemBottomDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editItemTopDivider"
+        tools:listitem="@layout/list_item" />
+
+    <Button
+        android:id="@+id/editItemSearchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/editItemSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editItemAmount" />
+
+    <EditText
+        android:id="@+id/editItemAmount"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        android:hint="@string/editItemAmountHint"
+        android:inputType="textPersonName"
+        android:text="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editItemSearchView"
+        android:imeOptions="actionDone"/>
+
+    <SearchView
+        android:id="@+id/editItemSearchView"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="7dp"
+        android:queryHint="@string/editItemSearchHint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editItemTitle" />
+
+    <TextView
+        android:id="@+id/editItemTitle"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/editItemTitle"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/editItemCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/editItemCancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editItemBottomDivider" />
+
+    <View
+        android:id="@+id/editItemTopDivider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="7dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editItemSearchButton" />
+
+    <View
+        android:id="@+id/editItemBottomDivider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="80dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/editItemRemoveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/editItemRemove"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editItemSaveButton"
+        app:layout_constraintStart_toEndOf="@+id/editItemCancelButton"
+        app:layout_constraintTop_toBottomOf="@+id/editItemBottomDivider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

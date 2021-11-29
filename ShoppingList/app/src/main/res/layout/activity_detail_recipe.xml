@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailRecipeActivity">
+
+    <TextView
+        android:id="@+id/detailsRecipeInstructions"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/inter"
+        android:hint="@string/detailsRecipeInstructions"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/detailsRecipeEditButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsRecipeDividerBottom" />
+
+    <TextView
+        android:id="@+id/detailsRecipeTitle"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/detailsRecipeTitle"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/detailsRecipeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/detailsRecipeDefaultName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/detailsRecipeDividerTop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsRecipeTitle" />
+
+    <ImageView
+        android:id="@+id/detailsRecipeImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsRecipeTitle"
+        tools:src="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/detailsRecipeCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/detailsRecipeCancelButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/detailsRecipeEditButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/detailsRecipeEditButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/detailsRecipeAddToSLButton"
+        app:layout_constraintStart_toEndOf="@+id/detailsRecipeCancelButton" />
+
+    <Button
+        android:id="@+id/detailsRecipeAddToSLButton"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/detailsRecipeAddToSLButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/detailsRecipeDividerTop"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="7dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsRecipeImage" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/detailsRecipeRcv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/detailsRecipeDividerBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsRecipeDividerTop"
+        tools:listitem="@layout/list_item" />
+
+    <View
+        android:id="@+id/detailsRecipeDividerBottom"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="200dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/detailsRecipeEditButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

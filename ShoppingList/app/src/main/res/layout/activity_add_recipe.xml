@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.AddRecipeActivity">
+
+    <EditText
+        android:id="@+id/addRecipeInstructions"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/addRecipeInstructions"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/addRecipeDividerBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addRecipeSpinner"
+        android:imeOptions="actionDone"/>
+
+    <Button
+        android:id="@+id/addRecipeAddButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/addRecipeAddButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/addRecipeIngredient"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        android:hint="@string/addRecipeIngredient"
+        android:inputType="textPersonName"
+        android:text="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addRecipeItem"
+        android:imeOptions="actionDone"/>
+
+    <EditText
+        android:id="@+id/addRecipeAmount"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        android:hint="@string/addRecipeAmount"
+        android:inputType="textPersonName"
+        android:text="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addRecipeIngredient"
+        android:imeOptions="actionDone"/>
+
+    <TextView
+        android:id="@+id/addRecipeItem"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/addRecipeTitle"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addRecipeIngredientButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/addRecipeSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addRecipeAmount" />
+
+    <View
+        android:id="@+id/addRecipeDivider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addRecipeIngredientButton" />
+
+    <!--<Spinner
+        android:id="@+id/addRecipeSpinner"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addRecipeDivider" />-->
+    <dk.au.mad21fall.appproject.group17.helpers.RecipeSpinner
+        android:id="@+id/addRecipeSpinner"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addRecipeDivider" />
+
+    <Button
+        android:id="@+id/addRecipeCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/addRecipeCancelButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/addRecipeDividerBottom"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="15dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/addRecipeAddButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

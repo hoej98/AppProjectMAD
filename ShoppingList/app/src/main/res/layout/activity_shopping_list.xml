@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_maxWidth="140dp"
+    tools:context=".ShoppingListActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/shoppingListRcv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/shoppingListDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/list_item" />
+
+    <Button
+        android:id="@+id/shoppingListRemove"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/shoppingListRemove"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shoppingListDivider" />
+
+    <Button
+        android:id="@+id/shoppingListAdd"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/shoppingListAdd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/shoppingListRemove"
+        app:layout_constraintStart_toEndOf="@+id/shoppingListRecipes"
+        app:layout_constraintTop_toBottomOf="@+id/shoppingListDivider" />
+
+    <Button
+        android:id="@+id/shoppingListRecipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/shoppingListRecipes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shoppingListDivider"
+        app:layout_constraintWidth_max="140dp" />
+
+    <View
+        android:id="@+id/shoppingListDivider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="80dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/shoppingListDivider2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="60dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/shoppingListLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/shoppingListLogout"
+        app:layout_constraintBottom_toTopOf="@+id/shoppingListRcv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/shoppingListSelectAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/shoppingListSelectAll"
+        app:layout_constraintBottom_toTopOf="@+id/shoppingListDivider2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

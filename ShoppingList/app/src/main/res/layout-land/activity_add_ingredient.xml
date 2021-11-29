@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItemActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/addItemRcv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/addItemBottomDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addItemTopDivider"
+        tools:listitem="@layout/list_item" />
+
+    <TextView
+        android:id="@+id/addItemTitle"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/addItemTitle"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/addItemSearchView"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="7dp"
+        android:queryHint="@string/addItemSearchHint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addItemTitle" />
+
+    <EditText
+        android:id="@+id/addItemAmount"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        android:hint="@string/addItemAmountHint"
+        android:inputType="textPersonName"
+        android:text="@null"
+        app:layout_constraintEnd_toStartOf="@+id/addItemSearchButton"
+        app:layout_constraintStart_toEndOf="@+id/addItemSearchView"
+        app:layout_constraintTop_toBottomOf="@+id/addItemTitle"
+        android:imeOptions="actionDone"/>
+
+    <Button
+        android:id="@+id/addItemSearchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/addItemSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addItemTitle" />
+
+    <Button
+        android:id="@+id/addItemCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/addItemCancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addItemBottomDivider" />
+
+    <Button
+        android:id="@+id/addItemAddButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/addItemAdd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addItemBottomDivider" />
+
+    <View
+        android:id="@+id/addItemTopDivider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="7dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addItemSearchButton" />
+
+    <View
+        android:id="@+id/addItemBottomDivider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="60dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

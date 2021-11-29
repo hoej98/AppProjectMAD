@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">ShoppingList</string>
+    <!--Login strings-->
+    <string name="loginTitle">ShoppingList</string>
+    <string name="loginButton">Login</string>
+    <string name="loginWelcome">Welcome</string>
+    <string name="loginWelcomeBack">Welcome back</string>
+    <!--ShoppingList strings-->
+    <string name="shoppingListRecipes">Recipes</string>
+    <string name="shoppingListAdd">Add</string>
+    <string name="shoppingListRemove">Remove</string>
+    <string name="shoppingListLogout">Log out</string>
+    <string name="shoppingListSelectAll">Select all</string>
+    <string name="shoppingListRemoveToast">No items has been selected</string>
+    <string name="shoppingListConfirmRemoveToast">Items removed</string>
+    <!--AddItem strings-->
+    <string name="addItemTitle">Add item</string>
+    <string name="addItemAmountHint">Amount…</string>
+    <string name="addItemSearch">Search</string>
+    <string name="addItemAdd">Add</string>
+    <string name="addItemCancel">Cancel</string>
+    <string name="addItemSearchHint">Item…</string>
+    <string name="addItemNameToast">Please enter a search name</string>
+    <string name="addItemSelectItemToast">Please select an item</string>
+    <string name="addItemAmountToast">Please enter an amount</string>
+    <string name="addItemConfirmedToast"> added</string>
+    <string name="addItemCancelledToast">Cancelled</string>
+    <string name="addItemUnknownItem">Add as unknown item…</string>
+    <!--EditItems strings-->
+    <string name="editItemTitle">Edit item</string>
+    <string name="editItemSearch">Search</string>
+    <string name="editItemSearchHint">Item…</string>
+    <string name="editItemAmountHint">Amount…</string>
+    <string name="editItemCancel">Cancel</string>
+    <string name="editItemSave">Save</string>
+    <string name="editItemRemove">Remove</string>
+    <!--Recipe list strings-->
+    <string name="recipeListShoppingListButton">Shopping list</string>
+    <string name="recipeListAdd">Add</string>
+    <!--AddRecipe strings-->
+    <string name="addRecipeAddButton">Add</string>
+    <string name="addRecipeCancelButton">Cancel</string>
+    <string name="addRecipeTitle">Add recipe</string>
+    <string name="addRecipeSearch">Add ingredient</string>
+    <string name="addRecipeIngredient">Ingredient…</string>
+    <string name="addRecipeAmount">Amount…</string>
+    <string name="addRecipeInstructions">Instructions…</string>
+    <string name="addRecipeDialogName">Please enter a recipe name</string>
+    <string name="addRecipeDialogOK">OK</string>
+    <string name="addRecipeDialogCancel">Cancel</string>
+    <string name="addRecipeImageDialogName">Would you like to add a photo?</string>
+    <string name="addRecipeImageDialogYes">Camera</string>
+    <string name="addRecipeImageDialogNeutral">Storage</string>
+    <string name="addRecipeImageDialogNo">No</string>
+    <string name="addRecipeIngredientToast">Please specify ingredient name</string>
+    <string name="addRecipeAmountToast">Please specify amount</string>
+    <string name="addRecipeRecipeToast">Please add at least 1 ingredient</string>
+    <string name="addRecipeCameraError">No camera app found</string>
+    <string name="addRecipeStorageError">No storage app found</string>
+    <string name="addRecipeAddName">Please enter a name</string>
+    <string name="addRecipeError">Something went wrong</string>
+    <string name="addRecipeItemDelete">Delete </string>
+    <string name="addRecipeCancelledToast">Cancelled</string>
+    <string name="addRecipeConfirmedToast"> added</string>
+    <!--DetailRecipe strings-->
+    <string name="detailsRecipeTitle">Recipe details</string>
+    <string name="detailsRecipeDefaultName">Indian rice…</string>
+    <string name="detailsRecipeInstructions">Instructions…</string>
+    <string name="detailsRecipeAddToSLButton">Add to list</string>
+    <string name="detailsRecipeEditButton">Edit</string>
+    <string name="detailsRecipeCancelButton">Cancel</string>
+    <string name="detailsRecipeIngredientsToast">Ingredients have been added!</string>
+    <string name="editItemRemovedToast"> was removed</string>
+    <string name="editItemAmountToast">Please enter an amount</string>
+    <string name="editItemNoChangeToast">No changes was made</string>
+    <string name="editItemEditedToast"> edited</string>
+    <string name="editItemCancelledToast">Cancelled</string>
+    <!--EditRecipe strings-->
+    <string name="editRecipeTitle">Edit recipe</string>
+    <string name="editRecipeDefaultName">Indian rice…</string>
+    <string name="editRecipeAddIngredient">Add ingredient</string>
+    <string name="editRecipeInstructions">Instructions…</string>
+    <string name="editRecipeSaveButton">Save</string>
+    <string name="editRecipeRemoveButton">Remove</string>
+    <string name="editRecipeCancelButton">Cancel</string>
+    <string name="editRecipeRemovedToast">Recipe has been removed</string>
+    <string name="editRecipeSavedToast">Saving recipe…</string>
+    <string name="editRecipeImageErrorToast">Something went wrong</string>
+</resources>
